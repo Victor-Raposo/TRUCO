@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>marcador de truco</h1>
+    <div class="container">
+        <div class="time">
+            <h2>time 1</h2>
+            <div class="pontos" id="pontosA">0</div>
+
+            <button class="mais"
+            onclick="alterar('A', 1)">=+1</button>
+            <button class="mais"
+            onclick="alterar('A', 3)">=+3</button>
+            <button class="mais"
+            onclick="alterar('A', 6)">=+6</button>
+            <button class="mais"
+            onclick="alterar('A', 9)">=+9</button>
+            <button class="mais"
+            onclick="alterar('A', 12)">=+12</button>
+            <button class="menos"
+            onclick="alterar('A',-1)">=-1</button>
+        </div>
+        <div class="time">
+            <h2>time 2</h2>
+            <div class="pontos" id="pontosB">0</div>
+
+            <button class="mais"
+            onclick="alterar('B', 1)">=+1</button>
+            <button class="mais"
+            onclick="alterar('B', 3)">=+3</button>
+            <button class="mais"
+            onclick="alterar('B', 6)">=+6</button>
+            <button class="mais"
+            onclick="alterar('B', 9)">=+9</button>
+            <button class="mais"
+            onclick="alterar('B', 12)">=+12</button>
+            <button class="menos"
+            onclick="alterar('B',-1)">=-1</button>
+        </div>
+        
+</div>
+
+<div id="vencedor"></div>
+
+<button class="reset" onclick="reiniciar()">Reiniciar Partida</button>
+<script src="script.js"></script>
+</body>
+</html>
